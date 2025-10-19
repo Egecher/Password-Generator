@@ -22,3 +22,7 @@ class PasswordGeneratorApp(QWidget):
     def generate_password(self):
         parola = create_password()
         self.password_field.setText(parola)
+
+    def copy_password(self):
+        clipboard = QApplication.clipboard()
+        clipboard.setText(self.password_field.text())
