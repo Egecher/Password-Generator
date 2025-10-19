@@ -11,3 +11,10 @@ def create_password():
     dizi = np.random.randint(0, 100000, size=(1, 10))
     parola = ''.join(map(str, dizi[0]))
     return parola
+
+class PasswordGeneratorApp(QWidget):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("🔐Password Generator")
+        self.setFixedWidth(450)
+        self.setFixedHeight(200)
