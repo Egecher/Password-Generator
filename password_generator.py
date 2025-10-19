@@ -18,3 +18,7 @@ class PasswordGeneratorApp(QWidget):
         self.setWindowTitle("🔐Password Generator")
         self.setFixedWidth(450)
         self.setFixedHeight(200)
+
+    def generate_password(self):
+        parola = create_password()
+        self.password_field.setText(parola)
