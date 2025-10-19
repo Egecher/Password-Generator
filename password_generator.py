@@ -26,3 +26,9 @@ class PasswordGeneratorApp(QWidget):
     def copy_password(self):
         clipboard = QApplication.clipboard()
         clipboard.setText(self.password_field.text())
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    window = PasswordGeneratorApp()
+    window.show()
+    sys.exit(app.exec_())
