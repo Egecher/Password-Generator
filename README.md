@@ -1,35 +1,32 @@
 # Random Password Generator
 
-Bu proje, her 3 saniyede bir rastgele şifreler oluşturan basit bir Python scriptidir.
+Bu proje, kullanıcı dostu bir grafik arayüz (GUI) üzerinden rastgele şifre üreten ve tek tıklamayla kopyalama imkânı sunan bir Python uygulamasıdır.
 
 ## Özellikler
 - Her çalıştırıldığında 10 adet sayıdan oluşan rastgele bir şifre üretir.
-- Üretilen şifreler konsola yazdırılır.
-- Script sürekli çalışır ve her 3 saniyede bir yeni şifre üretir.
+- "Parola Oluştur" düğmesine tıklandığında, NumPy kütüphanesiyle rastgele sayılardan oluşan 10 haneli bir şifre üretilir.
+- "Kopyala" düğmesine tıklayarak şifre otomatik olarak panoya (clipboard) kopyalanır.
+- Kullanıcı dostu, sade bir arayüz ile kolay kullanım sağlar.
+- Uygulamanın yükseklik ve genişliği sabittir.
 
 ## Gereksinimler
 - Python 3.x
-- NumPy kütüphanesi (`pip install numpy`)
-- PyQt5 kütüphanesi (`pip install PyQt5`)
+- PyQt5 kütüphanesi - Arayüz (GUI) oluşturma
+- NumPy kütüphanesi - Rastgele sayı üretimi
 
 ## Kullanım
-```bash
-python password_generator.py
-````
+1. Gerekli kütüphaneleri yükle:
 
-Çalıştırdığınızda, her 3 saniyede bir yeni şifre konsola yazdırılacaktır:
+   ```bash
+   pip install PyQt5 numpy
+   ```
+2. Script’i çalıştır:
 
-```
-[[79878   786  4215 27458 84199  7220  1443 31632 99148 48209]]
-1- Password Created : 798787864215274588419972201443316329914848209
-[[ 5942 38804 52245 46519 25390 79983 71441 64965 88418 27869]]
-2- Password Created : 5942388045224546519253907998371441649658841827869
-[[  121 27764 63748 51636 13922 32796 74447 35125 61693  3944]]
-3- Password Created : 12127764637485163613922327967444735125616933944
-...
-```
+   ```bash
+   python password_generator.py
+   ```
+3. “Parola Oluştur” düğmesine tıkla → rastgele bir parola üretilecek.
+4. “Kopyala” düğmesine tıklayarak şifreyi panoya al.
 
 ## Notlar
-
-* Script sonsuz döngüde çalıştığı için durdurmak için `Ctrl + C` kullanın.
 * Şifreler tamamen rastgele oluşturulur ve güvenlik amaçlı kullanılabilir.
