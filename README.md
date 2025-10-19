@@ -10,6 +10,7 @@ Bu proje, her 3 saniyede bir rastgele şifreler oluşturan basit bir Python scri
 ## Gereksinimler
 - Python 3.x
 - NumPy kütüphanesi (`pip install numpy`)
+- PyQt5 kütüphanesi (`pip install PyQt5`)
 
 ## Kullanım
 ```bash
